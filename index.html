@@ -37,6 +37,15 @@
     width: 100px;
     
 }
+
+
+
+@media (min-width: 375px) and (max-width: 600px) {
+	.div-1 {
+		width: clamp(162.5px, 75.93299999999999vw, 650px);
+	}
+}
+
 </style>
 
 
@@ -70,7 +79,6 @@ function myFunction() {
 
 
 
-
     <div id="div-1">To-Do list<br>&nbsp;
     <input type="text" id="userText" value="" placeholder="Ваша заметка">&nbsp;
     <button onclick="myFunction()">Submit/Добавить</button>&nbsp;&nbsp;&nbsp;
@@ -89,3 +97,4 @@ function myFunction() {
 
 </body>
 </html>
+
