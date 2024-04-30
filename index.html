@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DO list</title>
+</head>
+<body>
+
+<style>
+    body{
+    background-color:lightpink;
+}
+
+
+
+#div-1{
+  
+    padding-left: 750px;
+    font-size: 30px;
+    font-family:monospace;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#div-1 button{
+    width: 100px;
+    background-color:darkslategray;
+    color: chocolate;
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#div-1 input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100px;
+    
+}
+</style>
+
+
+
+<script>
+
+function myFunction() {
+    var user = document.getElementById("userText").value;
+    var first = document.createElement("p");                 
+    var text = document.createTextNode(user);      
+    first.appendChild(text);                                          
+    document.getElementById("div-1").appendChild(first);     
+    var button = document.createElement("BUTTON");
+  button.innerHTML = "Remove/Удалить";
+  button.onclick = function(){
+    this.parentElement.remove();
+  }
+  first.appendChild(button);
+
+  document.getElementById("div-1").appendChild(first);     
+  para.onclick = function() {
+    this.style.textDecoration = "line-through";
+  }
+}
+
+</script>
+
+
+
+
+
+
+
+
+    <div id="div-1">To-Do list<br>&nbsp;
+    <input type="text" id="userText" value="" placeholder="Ваша заметка">&nbsp;
+    <button onclick="myFunction()">Submit/Добавить</button>&nbsp;&nbsp;&nbsp;
+ 
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+
+</body>
+</html>
