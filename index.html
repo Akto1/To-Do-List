@@ -34,10 +34,30 @@
     width: 100px;
 }
 
-@media (min-width: 390px) and (max-width: 844px) {
-	#div-1 {
-		width: clamp(390px,844px);
-	}
+@media screen and (max-width:1200px){
+#div-1{
+    font-size: 56px;
+}
+}
+
+@media screen and (max-width:998px){
+#div-1{
+    background-color: blue;
+}
+}
+
+@media screen and (max-width:768px){
+#div-1{
+    font-size: 32px;
+    background-color: crimson;
+}
+}
+
+@media screen and (max-width:576px) and (max-height:557px){
+#div-1{
+    padding-left: 480px;
+    font-size: 40px;
+}
 }
 
 
